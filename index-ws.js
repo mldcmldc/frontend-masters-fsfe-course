@@ -5,6 +5,7 @@ const app = express();
 
 app.get("/", function (req, res) {
   res.sendFile("index.html", { root: __dirname });
+  res.end()
 });
 
 server.on("request", app);
